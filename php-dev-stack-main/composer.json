@@ -1,0 +1,9 @@
+{
+    "name": "cristi/php-dev-stack",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "CsvTools\\": "public/"
+        }
+    }
+}
