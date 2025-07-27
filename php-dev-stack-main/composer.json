@@ -3,7 +3,11 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "CsvTools\\": "public/"
+            "Reader\\": "src/Reader/",
+            "Writer\\": "src/Writer/",
+            "Tasks\\": "src/Tasks/",
+            "Services\\": "src/Services/",
+            "Models\\": "src/Models/"
         }
     }
 }

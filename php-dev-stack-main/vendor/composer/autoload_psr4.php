@@ -6,5 +6,9 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'CsvTools\\' => array($baseDir . '/public'),
+    'Writer\\' => array($baseDir . '/src/Writer'),
+    'Tasks\\' => array($baseDir . '/src/Tasks'),
+    'Services\\' => array($baseDir . '/src/Services'),
+    'Reader\\' => array($baseDir . '/src/Reader'),
+    'Models\\' => array($baseDir . '/src/Models'),
 );
