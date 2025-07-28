@@ -25,4 +25,10 @@ class DataRow
     {
         return $this->values[$index] ?? null;
     }
+
+    public function removeColumn(int $index): void
+    {
+        unset($this->values[$index]);
+        $this->values = array_values($this->values);
+    }
 }

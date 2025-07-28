@@ -25,4 +25,10 @@ class DataHeader
     {
         return $this->columns;
     }
+
+    public function removeColumn(int $index): void
+    {
+        unset($this->columns[$index]);
+        $this->columns = array_values($this->columns);
+    }
 }
