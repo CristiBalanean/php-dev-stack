@@ -23,6 +23,10 @@ switch ($task)
         require __DIR__ . '/bin/ReorderColumns.php';
         break;
 
+    case 'truncate-string':
+        require __DIR__ . '/bin/TruncateString.php';
+        break;
+
     default:
         echo "Unknown task: $task";
 }
