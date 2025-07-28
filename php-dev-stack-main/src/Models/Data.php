@@ -14,6 +14,21 @@ class Data
         $this->rows = $rows;
     }
 
+    public static function hasHeader(array $lines): bool
+    {
+        if (empty($lines)) return false;
+
+        $firstRow = str_getcsv($lines[0]);
+
+        foreach ($firstRow as $value) 
+        {
+            if (is_numeric(trim($value))) 
+                return false;
+        }
+
+        return true;
+    }
+
     public function getHeader(): ?DataHeader
     {
         return $this->header;

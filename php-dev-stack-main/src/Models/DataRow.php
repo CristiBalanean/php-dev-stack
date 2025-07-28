@@ -20,4 +20,9 @@ class DataRow
     {
         return $this->values;
     }
+
+    public function getColumn(int $index): mixed 
+    {
+        return $this->values[$index] ?? null;
+    }
 }

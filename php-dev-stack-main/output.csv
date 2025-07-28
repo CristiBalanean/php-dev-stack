@@ -1,4 +1,4 @@
-Index,Name,Age,Grade
-1,Cristi,24,7
-2,Matei,31,9
-3,Mihai,47,5
+Age,Grade,Name
+24,7,Cristi
+31,9,Matei
+47,5,Mihai

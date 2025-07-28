@@ -20,21 +20,12 @@ class CsvReader implements FileReaderInterface
     {
         $lines = $this->fileLines;
 
-        $firstRow = str_getcsv($lines[0]);
-
-        $hasHeader = true;
-        foreach ($firstRow as $value) 
-        {
-            if (is_numeric($value)) 
-            {
-                $hasHeader = false;
-                break;
-            }
-        }
+        $hasHeader = Data::hasHeader($lines);
 
         $header = null;
         if ($hasHeader) 
         {
+            $firstRow = str_getcsv($lines[0]);
             $header = new DataHeader($firstRow);
             array_shift($lines);
         }
