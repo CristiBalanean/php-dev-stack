@@ -27,6 +27,10 @@ switch ($task)
         require __DIR__ . '/bin/TruncateString.php';
         break;
 
+    case 'merge-files':
+        require __DIR__ . '/bin/MergeFiles.php';
+        break;
+
     default:
         echo "Unknown task: $task";
 }
