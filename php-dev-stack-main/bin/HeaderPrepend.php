@@ -7,7 +7,7 @@ use Writer\CsvWriter;
 use Services\HeaderPrependService;
 
 $input = $argv[2] ?? 'input.csv';
-$output = $argv[3] ?? 'input.csv';
+$output = $argv[3] ?? 'output.csv';
 $header = explode(',', $argv[4]);
 
 $reader = new CsvReader($input);

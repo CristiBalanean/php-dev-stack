@@ -11,9 +11,9 @@ class DataHeader
         $this->columns = $columns;
     }
 
-    public function getColumnIndex(string $name): int
+    public function prependColumn(string $columnName): void
     {
-        return $index = array_search($name, $this->columns);
+        array_unshift($this->columns, $columnName);
     }
 
     public function hasColumn(string $name): bool

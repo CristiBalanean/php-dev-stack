@@ -2,7 +2,6 @@
 
 namespace Services;
 
-use Reader\FileReaderInterface;
 use Writer\CsvWriter;
 use Models\Data;
 use Models\DataHeader;

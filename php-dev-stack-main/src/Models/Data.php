@@ -5,6 +5,7 @@ namespace Models;
 class Data
 {
     private ?DataHeader $header;
+    /** @var DataRow[] */
     private array $rows;
 
     public function __construct(?DataHeader $header, array $rows)

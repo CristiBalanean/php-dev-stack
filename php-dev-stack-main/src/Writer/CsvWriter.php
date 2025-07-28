@@ -16,7 +16,9 @@ class CsvWriter implements FileWriterInterface
 
     public function writeRows(Data $data): void
     {
-        fputcsv($this->fileLines, $data->getHeader()->getColumns());
+        $header = $data->getHeader();
+        if ($header !== null)
+            fputcsv($this->fileLines, $header->getColumns());
 
         foreach ($data->getRows() as $row) 
         {
