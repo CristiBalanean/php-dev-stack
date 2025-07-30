@@ -31,4 +31,9 @@ class DataHeader
         unset($this->columns[$index]);
         $this->columns = array_values($this->columns);
     }
+
+    public function addColumn(string $columnName): void
+    {
+        $this->columns[] = $columnName;
+    }
 }

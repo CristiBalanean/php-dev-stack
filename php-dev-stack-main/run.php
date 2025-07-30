@@ -39,6 +39,14 @@ switch ($task)
         require __DIR__ . '/bin/DecryptColumns.php';
         break;
 
+    case 'sign-column':
+        require __DIR__ . '/bin/SignColumn.php';
+        break;
+
+    case 'verify-signature':
+        require __DIR__ . '/bin/VerifySignature.php';
+        break;
+
     default:
         echo "Unknown task: $task";
 }
