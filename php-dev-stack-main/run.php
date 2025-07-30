@@ -31,6 +31,14 @@ switch ($task)
         require __DIR__ . '/bin/MergeFiles.php';
         break;
 
+    case 'encrypt-files':
+        require __DIR__ . '/bin/EncryptColumns.php';
+        break;
+
+    case 'decrypt-files':
+        require __DIR__ . '/bin/DecryptColumns.php';
+        break;
+
     default:
         echo "Unknown task: $task";
 }
