@@ -47,6 +47,10 @@ switch ($task)
         require __DIR__ . '/bin/VerifySignature.php';
         break;
 
+    case 'inner-join':
+        require __DIR__ . '/bin/InnerJoinFiles.php';
+        break;
+
     default:
         echo "Unknown task: $task";
 }
